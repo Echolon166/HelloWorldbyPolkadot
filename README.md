@@ -9,3 +9,8 @@ Submission: https://westend.subscan.io/extrinsic/0x61933f4dc81bd50c73e942f1b4971
 - Submission Date: 10/15/2020 - 11:11 AM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/launch_a_local_substrate_development_chain.png?raw=true
+
+## 3 -[FRAME Identity: Set An Identity On A Local --Dev Chain](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/10/100023936)
+- Submission Date: 10/15/2020 - 3:27 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/polkadot_identity_node_template.png?raw=true
