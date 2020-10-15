@@ -1,0 +1,15 @@
+{
+  "name": "get-block-information",
+  "version": "1.0.0",
+  "description": "Command line utility that displays information about the latest block on Polkadot",
+  "main": "index.js",
+  "dependencies": {
+    "@polkadot/api": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erdem Değer",
+  "license": "ISC"
+}
