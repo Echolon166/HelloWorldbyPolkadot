@@ -14,3 +14,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/launch_
 - Submission Date: 10/15/2020 - 3:27 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/polkadot_identity_node_template.png?raw=true
+
+## 4- [Set An Identity On Kusama Or Polkadot's Development Version](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/11/100023937)
+- Submission Date: 10/15/2020 - 5:27 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/polkadot_identity_development_version.png?raw=true
