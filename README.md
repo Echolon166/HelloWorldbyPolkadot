@@ -54,3 +54,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/using_r
 - Submission Date: 10/18/2020 - 10:36 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/front_end_javascript
+
+## 12 - [Deploy On Moonbase Alpha Using Truffle](https://gitcoin.co/issue/PureStake/gitcoin-hello-world-by-moonbeam/1/100023953)
+- Submission Date: 10/19/2020 - 04:00 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/deploy_on_moonbase_alpha_using_truffle
