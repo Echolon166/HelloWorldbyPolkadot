@@ -59,3 +59,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/front_e
 - Submission Date: 10/19/2020 - 04:00 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/deploy_on_moonbase_alpha_using_truffle
+
+## 13 - [Enable Multi-Currency Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/2/100023952)
+- Submission Date:  (UTC+3)
+
+Submission: 

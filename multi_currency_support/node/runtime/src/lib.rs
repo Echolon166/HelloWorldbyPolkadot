@@ -6,6 +6,7 @@
 #[cfg(feature = "std")]
 include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
 
+use codec::{Encode, Decode};
 use sp_std::prelude::*;
 use sp_core::{crypto::KeyTypeId, OpaqueMetadata};
 use sp_runtime::{
@@ -37,6 +38,8 @@ pub use frame_support::{
 		constants::{BlockExecutionWeight, ExtrinsicBaseWeight, RocksDbWeight, WEIGHT_PER_SECOND},
 	},
 };
+#[cfg(feature = "std")]
+use serde::{Deserialize, Serialize};
 
 /// Import the template pallet.
 pub use pallet_template;
@@ -66,6 +69,18 @@ pub type Hash = sp_core::H256;
 
 /// Digest item type.
 pub type DigestItem = generic::DigestItem<Hash>;
+
+pub type Amount = i128;
+
+#[derive(Encode, Decode, Eq, PartialEq, Copy, Clone, PartialOrd, Ord, Debug)]
+#[cfg_attr(feature = "std", derive(Serialize, Deserialize))]
+pub enum CurrencyId {
+	BTC,
+	DOT,
+	ECH,
+	KSM,
+	USDT,
+}
 
 /// Opaque types. These are used by the CLI to instantiate machinery that don't need to know
 /// the specifics of the runtime. They can then be made to be agnostic over specific formats
@@ -192,6 +207,15 @@ impl frame_system::Trait for Runtime {
 	type SystemWeightInfo = ();
 }
 
+impl orml_tokens::Trait for Runtime {
+	type Event = Event;
+	type Balance = Balance;
+	type Amount = Amount;
+	type CurrencyId = CurrencyId;
+	type OnReceived = ();
+	type WeightInfo = ();
+}
+
 impl pallet_aura::Trait for Runtime {
 	type AuthorityId = AuraId;
 }
@@ -276,6 +300,7 @@ construct_runtime!(
 		System: frame_system::{Module, Call, Config, Storage, Event<T>},
 		RandomnessCollectiveFlip: pallet_randomness_collective_flip::{Module, Call, Storage},
 		Timestamp: pallet_timestamp::{Module, Call, Storage, Inherent},
+		Tokens: orml_tokens::{Module, Storage, Call, Config<T>, Event<T>},
 		Aura: pallet_aura::{Module, Config<T>, Inherent},
 		Grandpa: pallet_grandpa::{Module, Call, Storage, Config, Event},
 		Balances: pallet_balances::{Module, Call, Storage, Config<T>, Event<T>},
