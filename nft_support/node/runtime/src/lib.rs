@@ -192,6 +192,13 @@ impl frame_system::Trait for Runtime {
 	type SystemWeightInfo = ();
 }
 
+impl orml_nft::Trait for Runtime {
+	type ClassId = u64;
+	type TokenId = u64;
+	type ClassData = ();
+	type TokenData = ();
+}
+
 impl pallet_aura::Trait for Runtime {
 	type AuthorityId = AuraId;
 }
@@ -276,6 +283,7 @@ construct_runtime!(
 		System: frame_system::{Module, Call, Config, Storage, Event<T>},
 		RandomnessCollectiveFlip: pallet_randomness_collective_flip::{Module, Call, Storage},
 		Timestamp: pallet_timestamp::{Module, Call, Storage, Inherent},
+		OrmlNFT: orml_nft::{Module, Storage},
 		Aura: pallet_aura::{Module, Config<T>, Inherent},
 		Grandpa: pallet_grandpa::{Module, Call, Storage, Config, Event},
 		Balances: pallet_balances::{Module, Call, Storage, Config<T>, Event<T>},
