@@ -1,0 +1,14 @@
+{
+    "Address": "AccountId",
+    "LookupSource": "AccountId",
+    "CurrencyId": {
+        "_enum": [
+            "BTC",
+            "DOT",
+            "ECH",
+            "KSM",
+            "USDT"
+        ]
+    },
+    "Amount": "i128"
+}

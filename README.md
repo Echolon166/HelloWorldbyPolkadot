@@ -64,3 +64,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/deploy_
 - Submission Date: 10/21/2020 - 02:15 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/multi_currency_support
+
+## 14 - [Enable NFT Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/1/100023951)
+- Submission Date:  (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/nft_support
