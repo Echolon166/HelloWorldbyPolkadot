@@ -69,3 +69,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/multi_c
 - Submission Date: 10/22/2020 - 11:43 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/nft_support
+
+## 15 - [Smart Contracts - Write An ERC-20 Smart Contract With Ink!](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/9/100023935)
+- Submission Date:  (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/ink_smart_contracts
