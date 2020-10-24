@@ -2,11 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { Table, Grid, Button } from 'semantic-ui-react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { useSubstrate } from './substrate-lib';
+import EchContract, { defaultGasLimit } from './EchContract';
 
 export default function Main (props) {
   const { api, keyring } = useSubstrate();
   const accounts = keyring.getPairs();
   const [balances, setBalances] = useState({});
+  const echContract = EchContract(api);
+
+  const updateBalances = async (addresses) => {
+    const balancesMap = [];
+    await Promise.all(addresses.map(async (address) => {
+      balancesMap[address] = (await echContract.query.balanceOf(address, 0, defaultGasLimit, address)).output.toHuman();
+    }));
+    setBalances(balancesMap);
+  };
 
   useEffect(() => {
     const addresses = keyring.getPairs().map(account => account.address);
@@ -14,20 +24,17 @@ export default function Main (props) {
 
     api.query.system.account
       .multi(addresses, balances => {
-        const balancesMap = addresses.reduce((acc, address, index) => ({
-          ...acc, [address]: balances[index].data.free.toHuman()
-        }), {});
-        setBalances(balancesMap);
+        updateBalances(addresses);
       }).then(unsub => {
         unsubscribeAll = unsub;
       }).catch(console.error);
 
     return () => unsubscribeAll && unsubscribeAll();
-  }, [api, keyring, setBalances]);
+  }, [api, keyring, setBalances, updateBalances]);
 
   return (
     <Grid.Column>
-      <h1>Balances</h1>
+      <h1>ECH Balances</h1>
       <Table celled striped size='small'>
         <Table.Body>{accounts.map(account =>
           <Table.Row key={account.address}>
@@ -49,7 +56,7 @@ export default function Main (props) {
             </Table.Cell>
             <Table.Cell width={3}>{
               balances && balances[account.address] &&
-              balances[account.address]
+              balances[account.address] + ' ECH'
             }</Table.Cell>
           </Table.Row>
         )}
