@@ -1,6 +1,6 @@
 # Local Phala Network
 
-Twitter post: https://twitter.com/Echolon16/status/1320727819975090182
+Twitter post: https://twitter.com/Echolon16/status/1320729103578861570
 
 - Running core blockchain:
 
