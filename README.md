@@ -76,6 +76,6 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/nft_sup
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/ink_smart_contracts
 
 ## 16 - [Build And Run A Local Phala Network](https://gitcoin.co/issue/Phala-Network/hello-world-by-polkadot/1/100023945)
-- Submission Date: 10/26/2020 - 05:16  AM (UTC+3)
+- Submission Date: 10/26/2020 - 05:16 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/local_phala_network/README.md
