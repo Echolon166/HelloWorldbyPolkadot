@@ -6,6 +6,7 @@ import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 import { DeveloperConsole } from './substrate-lib/components';
 
 import AccountSelector from './AccountSelector';
+import ArticleStruct from './ArticleStruct';
 import Balances from './Balances';
 import BlockNumber from './BlockNumber';
 import Events from './Events';
@@ -69,8 +70,11 @@ function Main () {
             <Upgrade accountPair={accountPair} />
           </Grid.Row>
           <Grid.Row>
-            <Interactor accountPair={accountPair} />
+            <ArticleStruct accountPair={accountPair} />
             <Events />
+          </Grid.Row>
+          <Grid.Row>
+            <Interactor accountPair={accountPair} />
           </Grid.Row>
           <Grid.Row>
             <TemplateModule accountPair={accountPair} />
