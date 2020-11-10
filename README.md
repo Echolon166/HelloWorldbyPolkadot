@@ -79,3 +79,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/ink_sma
 - Submission Date: 10/26/2020 - 05:16 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/local_phala_network/README.md
+
+## 17 - [FRAME Development](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/7/100023933)
+- Submission Date: 11/10/2020 - 10:48 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/frame_development
