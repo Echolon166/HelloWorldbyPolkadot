@@ -89,3 +89,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/frame_d
 - Submission Date: 11/12/2020 - 02:08 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/frame_multisig
+
+## Extra - [Complete 18 Or More Challenges - 150 DOT For The First 50 Valid Submissions](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/18/100023944)
+- Submission Date: 11/12/2020 - 06:07 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/README.md
