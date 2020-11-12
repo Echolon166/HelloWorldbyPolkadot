@@ -84,3 +84,8 @@ Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/local_p
 - Submission Date: 11/10/2020 - 10:48 PM (UTC+3)
 
 Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/blob/main/frame_development
+
+## 18 - [FRAME Multisig](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/8/100023934)
+- Submission Date: 11/12/2020 - 02:08 PM (UTC+3)
+
+Submission: https://github.com/Echolon166/HelloWorldbyPolkadot/tree/main/frame_multisig
