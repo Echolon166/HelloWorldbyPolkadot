@@ -11,6 +11,7 @@ import BlockNumber from './BlockNumber';
 import Events from './Events';
 import Interactor from './Interactor';
 import Metadata from './Metadata';
+import MultisigTransfer from './MultisigTransfer';
 import NodeInfo from './NodeInfo';
 import TemplateModule from './TemplateModule';
 import Transfer from './Transfer';
@@ -65,12 +66,15 @@ function Main () {
             <Balances />
           </Grid.Row>
           <Grid.Row>
+            <MultisigTransfer accountPair={accountPair} />
+            <Events />
+          </Grid.Row>
+          <Grid.Row>
             <Transfer accountPair={accountPair} />
             <Upgrade accountPair={accountPair} />
           </Grid.Row>
           <Grid.Row>
             <Interactor accountPair={accountPair} />
-            <Events />
           </Grid.Row>
           <Grid.Row>
             <TemplateModule accountPair={accountPair} />
