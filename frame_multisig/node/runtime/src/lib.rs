@@ -196,6 +196,29 @@ impl pallet_aura::Trait for Runtime {
 	type AuthorityId = AuraId;
 }
 
+const DOLLARS: Balance = 10_000_000_000;
+const MILLICENTS: Balance = 100_000;
+
+pub const fn deposit(items: u32, bytes: u32) -> Balance {
+	items as Balance * 20 * DOLLARS + (bytes as Balance) * 100 * MILLICENTS
+}
+
+parameter_types! {
+	pub const DepositBase: Balance = deposit(1, 88);
+	pub const DepositFactor: Balance = deposit(0, 32);
+	pub const MaxSignatories: u16 = 10;
+}
+
+impl pallet_multisig::Trait for Runtime {
+	type Event = Event;
+	type Call = Call;
+	type Currency = Balances;
+	type DepositBase = DepositBase;
+	type DepositFactor = DepositFactor;
+	type MaxSignatories = MaxSignatories;
+	type WeightInfo = ();	
+}
+
 impl pallet_grandpa::Trait for Runtime {
 	type Event = Event;
 	type Call = Call;
@@ -277,6 +300,7 @@ construct_runtime!(
 		RandomnessCollectiveFlip: pallet_randomness_collective_flip::{Module, Call, Storage},
 		Timestamp: pallet_timestamp::{Module, Call, Storage, Inherent},
 		Aura: pallet_aura::{Module, Config<T>, Inherent},
+		Multisig: pallet_multisig::{Module, Call, Storage, Event<T>},
 		Grandpa: pallet_grandpa::{Module, Call, Storage, Config, Event},
 		Balances: pallet_balances::{Module, Call, Storage, Config<T>, Event<T>},
 		TransactionPayment: pallet_transaction_payment::{Module, Storage},
